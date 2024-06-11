@@ -1,0 +1,522 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=IBM+Plex+Serif:wght@100;300&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+ 
+html{
+    font-size:62.5%;
+}
+
+body{
+    font-family:"Acme&family", sans-serif;
+    line-height: 1.7;
+}
+li{
+   list-style: none;
+}
+
+a{
+    text-decoration:none;
+}
+
+p,li{
+    font-size:1.6rem;
+    margin-bottom:0.5em;
+    letter-spacing: 0.15em;
+}
+
+h1{
+    margin-bottom:0.5em;
+    letter-spacing: 0.15em;
+    font-weight: 500;
+}
+/* ############################## utility classes ##################### */
+
+.container{
+    max-width:900px;
+    width:90%;
+    margin:0 auto;
+}
+
+.tr{
+    color:red;
+}
+
+.tw{
+    color:white;
+}
+
+.tb{
+    color:black;
+}
+
+.tg{
+    color:rgb(46, 43, 43);
+}
+ 
+.btg{
+    background-color: lightgray;
+}
+
+.btn{
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: 700;
+    border-radius: 100px;
+}
+
+.btn-primary{
+    padding:10px 20px;
+    background-color: #fff;
+}
+
+.btn-primary:hover{
+background-color: antiquewhite;
+}
+
+.btn-sec{
+    color: black;
+    border:2px solid black;
+    margin-top: 5px;
+    padding: 8px 15px;
+    display: inline-block;
+}
+
+.btn-sec:hover{
+    background-color: lightgray;
+}
+
+.c-btn{
+    background-color: #6d36c74c;
+    color: black;
+    margin-top: 5px;
+    padding:8px 15px;
+    display: inline-block;
+    outline: none;
+    text-transform: uppercase;
+}
+
+.c-btn:hover{
+    background-color: lightcyan;
+    cursor: pointer;
+}
+
+.main-heading{
+    font-size:20px ;
+    font-weight:900;
+}
+.t-heading{
+    text-emphasis: dashed;
+    font-weight:600px;
+    font-size: 2rem;
+}
+/* ###########################  Header content ########################*/
+.header{
+    position: relative;
+    height:95vh;
+    background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)) ,url(../img/zq-lee-VbDjv8-8ibc-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.nav-bar{
+    padding:1rem;
+}
+/* .header .logo,
+.header .nav-items a{
+      color: #fff;
+} */
+ 
+/* .nav-bar{
+    border: 2px solid white;
+} */
+.header .nav-bar .logo{
+    float:left;
+    font-size: 3.5rem;
+}
+
+.header .nav-bar .nav-items{
+    float:right;
+    word-spacing:15px;
+    padding:1rem;
+}
+
+.nav-bar .nav-item{
+    display: inline-block;
+    margin-top: 1rem;
+}
+
+.navbar::after{
+    content: '';
+    display:block;
+    clear:both;
+}
+
+.nav-item a{
+    padding-bottom:3px ;
+}
+
+.nav-item a:hover{
+    border-bottom: 2px solid white;
+}
+
+/* ################################ Header main content ############################## */
+
+.h-content {
+    position:absolute;
+    text-transform:uppercase ;
+    text-align: center;
+    padding:20px;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+}
+
+.h-content a{
+    display: inline-block;
+    margin-top:10px;
+}
+
+/* ########################## Section css ################################# */
+
+.sect{
+    padding:10rem 0;
+    margin-bottom: 100px;
+}
+
+.row{
+    height:300px;
+    box-shadow: 7px 8px #aaa;
+}
+
+.row1,.row2{
+    margin-bottom:100px;
+ }
+
+.row1 .imgbox,.row2 .textbox,.row3 .imgbox{
+    float:left;
+    width:50%;
+}
+
+.row2 .imgbox,.row1 .textbox,.row3 .textbox{
+    float:right;
+    width:50%;
+}
+
+.row .imgbox{
+    background-color: #fff;
+    height:100%;
+}
+
+.row .textbox{
+    background-color: #fff;
+    height:100%;
+    text-align: center;
+    padding:10px
+} 
+
+.row .imgbox img{
+    height:100%;
+    width:100%;
+}
+
+.textbox .hd{
+    font-family: sans-serif;
+    margin: 5px ;
+    color:#333;
+}
+
+/* ########################### Footer Styling ########################### */
+
+.foot{
+    background-color: rgba(9, 1, 32, 0.74);
+    height: 100px;
+}
+
+.social-logos{
+    padding: 10px;
+    text-align: center;
+
+}
+
+.social-logos .logo{
+    font-size: 35px;
+    margin:1rem;
+}
+
+.social-logos .ft{
+    font: size 15px; ;
+}
+
+/* ################################ About section ######################### */
+
+.about-wrap{
+    border-bottom: 5px solid rebeccapurple;
+    margin-bottom: 10px;
+}
+
+.about-wrap h1{
+    font-weight: 600;
+    font-size: 2.1rem;
+}
+.ab-tick{
+    margin:10px;
+    padding-top:5px;
+}
+.ab-tick::after{
+    content:'';
+    display: block;
+    clear:both;
+    margin:5px;
+}
+.about-left{
+    float:left;
+    width:50%;
+    text-align: center;
+}
+
+.about-right{
+    float:right;
+    width:50%;
+    text-align: center;
+}
+.about-sect p{ 
+    font-size: 1.5rem;
+}
+
+.about-left li,.about-right li{
+    font-size: 1.3rem;
+    padding-left: 5px;
+}
+
+.banner{
+     border: 3px solid rgb(39, 1, 64); 
+    height:80px;
+    background:linear-gradient(rgb(197, 177, 208),rgb(161, 88, 212));
+    background-color:#6d36c74c;
+    padding:20px;
+    box-shadow:5px 5px #444;
+}
+.left-banner{
+    float:left;
+    width:60%;
+    padding-left: 10px;
+}
+
+.left-banner p{
+    font-size: 1.9rem;
+}
+
+.right-banner{
+    float:right;
+    width:40%;
+    text-align: right;
+    padding-right: 30px;
+}
+.ab-btn{
+    border:2px solid rgb(37, 5, 49);
+    font-size: 1.8rem;
+    color:black;
+    padding: 8px 32px;
+}
+
+.ab-btn:hover{
+    background-color: lightpink;
+}
+/* ################################Contact Header ######################## */
+.con-header .nav-bar .logo{
+    float:left;
+    font-size: 3.5rem;
+}
+
+.con-header .nav-bar .nav-items{
+    float:right;
+    word-spacing:15px;
+    padding:1rem;
+}
+
+.con-header .nav-bar{
+    height: 15vh;
+    display: block;
+    margin-bottom: 5rem;
+    background-color:rgba(9, 1, 32, 0.74) ;
+}
+
+/* ############################## Contact section ########################## */
+
+.cont-sect {
+    padding:1rem;
+    height: 50rem;
+    margin-bottom: 100px;
+}
+
+.cont-sect .addr{
+        height:100%;
+        float:left; 
+        width: 49%;
+        background-color:ghostwhite;
+        box-shadow: 2px 2px 2px #a3a0a0;
+} 
+.addr-call i,.addr-call h3{
+    display: inline;
+}
+.addr-call i{
+    font-size: 20px;
+    color: blueviolet;
+    padding: 0px 5px;
+}
+
+.addr-call p{
+    margin-left: 15px;
+}
+
+.addr::after{
+    content: '';
+    clear:both;
+}
+.addr .conimg{
+    object-fit: cover; 
+    object-position: left; 
+    width:300px
+}
+.formhead h1::after{
+    content: '';
+    display:block;
+    clear:both;
+    width:100%;
+    border: 2px solid rebeccapurple;
+    margin:2px 0;
+}
+
+.cont-sect .form{
+    float:right;
+    width:49%;
+    background-color:ghostwhite;
+    height:100%;
+    box-shadow: 2px 2px 2px #a3a0a0;
+    padding: 10px;
+} 
+
+.formhead h1{
+    font-weight: 600;
+    font-size: 1.9rem;
+}
+
+.form-in label::after{
+    content: '*';
+    display: inline-block;
+    color: red;
+}
+.form-in input{
+    padding: 2px;
+    margin-bottom: 4px;
+    width:100%;
+}
+
+/* .formhead textarea{
+    display: block;
+    width:100%;
+    height:350px;
+} */
+.form button{
+    display: block;
+    margin:0 auto;
+    outline: none;
+    margin-top: 5px;
+}
+.form .p,.form .form-in{
+    font-size: 1.2rem;
+}
+.form-in textarea{
+    width:100%;
+    height: 130px;;
+    padding:10px;
+    margin-bottom: 5px;
+}
+
+/* ############################### Media Queries ############################# */
+
+@media (max-width:600px){
+ html{
+      font-size: 40%;
+ }
+
+header .header {
+     height:70%;
+ }
+
+.row{
+    height: auto;
+    width:100%;
+}
+
+.row .main-heading{
+    font-size: 15px;
+}
+
+ .row .textbox{
+      float:none;
+      width:100%;
+      height:50%;
+      font-size:5px ;
+    }
+    .row .imgbox{
+        float:none;
+        width:100%;
+        height:50%;
+      }
+  
+  .row1, .row2, .row3{
+    margin-bottom: 50px;
+  }
+
+  .left-banner, .right-banner{
+     float:none;
+     text-align: center;
+     width: 100%;
+  }
+.left-banner{
+    margin-top: -10px;
+}
+  .ab-btn{
+    margin: 5px 0px;
+    padding:4px 25px
+  }
+
+  .cont-sect .addr{
+    float:none;
+    width:100%;
+    margin-bottom: 25px;
+    height:auto;
+  }
+
+   .cont-sect .form{
+    float:none;
+    width:100%;
+    
+  }
+
+   /* footer::before{
+    content: '';
+    display: block;
+    text-align: end;
+    margin:20px;
+  }  */
+
+  .form-in textarea{
+    height:80px;
+  }
+
+  .c-btn{
+    margin-top: 15px;
+  }
+.conimg{
+    margin: 0 auto;
+}
+  .conimg img{
+    width:300px;
+  }
+}
